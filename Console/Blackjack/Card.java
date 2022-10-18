@@ -1,6 +1,19 @@
+/**
+ * An implementation of a card type.
+ *
+ * @author Jean Marc Boulos
+ * @since 18/10/2022
+ */
+public class Card {
+	
 	/**
-	 * The number of this card, where Ace: 1, Jack-King : 11-13
+	 * One of the four valid suits for this card.
 	 */
+	private Suit mySuit;
+	
+	/**
+ 	* The number of this card, where Ace: 1, Jack-King : 11-13
+ 	*/
 	private int myNumber;
 
 	/**
@@ -23,16 +36,16 @@
 	 */
 	public int getNumber() {
 	    return myNumber;
-	}
+  }
 	
-	public String toString() {
+ public String toString() {
 
-		String numStr;
+      String numStr = "Error";
 
-		switch(this.myNumber) {
+      switch(this.myNumber) {
         
-			case 2:
-				numStr = "Two";
+      case 2:
+	numStr = "Two";
         break;
         
       case 3:
@@ -85,6 +98,6 @@
         
 	  }
     
-    return numStr + " of " + mySuit;
+    return numStr + " of " + mySuit.toString();
   }
 }
