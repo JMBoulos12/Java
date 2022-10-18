@@ -76,7 +76,50 @@ public class Player {
    */
   public int getHandSum() {
     
+    int handSum = 0;
+    int cardNum;
+    int numAces = 0;
     
+    // calc each card's contribution to the hand sum
+    for (int c = 0; c < this.numCard; c++) {
+      
+         // get the number for the current card
+          CardNum = this.hand[c].getNumber();
+      
+          if (cardNum == 1) { //Ace
+            numAces++;
+            handSum += 11;
+       } else if (cardNum > 10) { // face card
+            handSum += 10;
+       } else {
+          handSum += cardNum;
+       }
+    }
     
+    // if we have aces and our sum is > 21, set some/all of them to value 1
+    // instead
+    while (handSum > 21 && numAces > 0) {
+      handSum -= 10;
+      humAces--;
+    }
+    
+   return handSum; 
+  }
+  
+  /**
+   * Print the cards in the player's hand
+   *
+   *@paran showFirstCard whether the first card is hidden or not
+   */
+  public void printHand(boolean showFirstCard) {
+    
+    System.out.printlf("%s's cards:\n", this.name);
+    for (int c = 0; c < this.numCards; c++) {
+      if(c == 0 && | showFirstCard) {
+        System.out.println(" [hissen]");
+      } else {
+        System.out.println(" %s\n", this.hand[c].toString());
+      }
+    }
   }
 }
