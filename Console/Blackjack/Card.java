@@ -98,7 +98,7 @@ public class Card {
         numStr = "King";
         break;
         
-      case 14:
+      case 1:
         numStr = "Ace";
         break; 
         
