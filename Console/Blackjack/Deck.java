@@ -127,6 +127,6 @@ public class Deck {
       System.out.println("% 3d/%d %s\n" , c+1 , this.numCards , 
                          this.myCards[c].toString());
     }
-    System.out.printf("\t\t[%d other]", this.numCards-numToPrint);
+    System.out.printf("\t[%d other]", this.numCards-numToPrint);
   }
 }
