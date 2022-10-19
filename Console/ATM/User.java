@@ -61,11 +61,24 @@ public class User {
     this.accounts = new ArrayList<Account>();
     
     // print log message
-    System.out.printf("New user %s, %s with ID %s created. \n", LastName, firstName, this.uuid);
+    System.out.printf("New user %s, %s with ID %s created. \n", LastName, 
+                      firstName, this.uuid);
     
   }
   
+  /**
+   * Add an account for the user
+   * @param onAcct  the account to add
+   */
   public void addAccount(Account onAcct) {
     this.accounts.add(onAcct);
+  }
+  
+  /**
+   * Return the user's UUID
+   * @return the uuid
+   */
+  public String getUUID() {
+    return this.uuid;
   }
 }
