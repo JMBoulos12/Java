@@ -229,6 +229,13 @@ public class ATM {
     } while (amount < 0 || amount > acctBal);
     
     // gobble up rest of ^revious input
+    sc.nextLine());
     
+    // get a memo
+    System.out.println("Enter a memo: ");
+    memo = sc.nextLine();
+    
+    // do the withdrawl
+    theUser.addAcctTransaction(FromAcct, -1*amount, memo);
   }
 }  
