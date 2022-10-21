@@ -149,4 +149,17 @@ public class User {
     return this.accounts.get(acctIdx).getBalance();
   }
   
+  /**
+   * Get the UUID of a particular account
+   * @param acctIdx   the index of the account to use
+   * @return          the UUID of the account
+   */
+  public String getAcctUUID(int acctIdx) {
+    return this.accounts.get(acctIdx).getUUID();
+  }
+  
+  public void addAcctTransaction(int acctIdx, double amount, String memo) {
+    this.accounts.get(acctIdx).addTransaction(amount, memo);
+  }
+  
 }
