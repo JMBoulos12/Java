@@ -227,5 +227,8 @@ public class ATM {
                             "balance if $%.02f\n", acctBal);
         }
     } while (amount < 0 || amount > acctBal);
+    
+    // gobble up rest of ^revious input
+    
   }
 }  
