@@ -196,7 +196,12 @@ public class ATM {
   
   }
   
-  public static void withdrawalFunds(User theUser, Scanner sc) {
+  /**
+   * Process a fund withdraw from an account
+   * @param theUser
+   * @param sc
+   */
+  public static void withdrawFunds(User theUser, Scanner sc) {
     
     // inits
     int fromAcct;
@@ -235,7 +240,55 @@ public class ATM {
     System.out.println("Enter a memo: ");
     memo = sc.nextLine();
     
-    // do the withdrawl
+    // do the withdraw
     theUser.addAcctTransaction(FromAcct, -1*amount, memo);
+  }
+  
+  /**
+   * Process a fund deposit to an account
+   * @param theUser
+   * @param sc
+   */
+  public static void depositFunds(User theUser, Scanner sc) {
+  
+  // inits
+    int toAcct;
+    double amount;
+    double acctBall;
+    String memo;
+    
+    // get the amount to transfer from
+    do {
+      System.out.printf("Enter the number (1-%d) of the account\n" +
+                       "to transfer from: ");
+      toAcct = sc.nextInt()-1;
+      if (toAcct < 0 || toAcct >= theUser.numAccounts()) {
+          System.out.println("Invalid account. Please try again.");
+      }
+    } while (toAcct < 0 || toAcct >= theUser.numAccounts());
+    acctBal = theUser.getAcctBalance(toAcct);
+    
+    // get the amount to transfer
+    do  {
+      System.out.printf("Enter the amount to transfer (max $%.02f): $",
+                       acctBal);
+        amount = sc.nextDouble());
+        if (amount < 0) {
+          System.out.println("Amount must be greater than zero.");
+        } else if (amount > acctBal) {
+          System.out.printf("Amount must not be greater than\n" +
+                            "balance if $%.02f\n", acctBal);
+        }
+    } while (amount < 0 || amount > acctBal);
+    
+    // gobble up rest of ^revious input
+    sc.nextLine());
+    
+    // get a memo
+    System.out.println("Enter a memo: ");
+    memo = sc.nextLine();
+    
+    // do the withdraw
+    theUser.addAcctTransaction(toAcct, amount, memo);
   }
 }  
