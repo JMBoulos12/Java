@@ -32,6 +32,12 @@ public class ATM {
     
   }
   
+  /**
+   *
+   * @param theBank
+   * @param sc
+   * @return
+   */
   public static User mainMenuPrompt(Bank theBank, Scanner sc) {
     
     // inits
@@ -51,9 +57,107 @@ public class ATM {
         // try to get the user to object corresponding to the ID and pin combo
         authUser = theBank.userLogin(userID, pin);
         if (authUser == null) {
-          System.out.println("");
+          System.out.println("Incorrect user ID/pin combination. " +
+                            "Please try again.");
         }
-    } while();
+      
+    } while(authUser == null); // continue looping until successful login
+    
+    return authUser;
+    
   }
   
+  public static void printUserMenu(User theUser, Scanner sc) {
+  
+    // print a summary of the user's accounts
+    theUser.printAccountsSummary();
+    
+    //init
+    int choice;
+    
+    // user menu
+    do {
+        System.out.printf("Welcome %s, what would you like to do?",
+                          theUser.getFirstName());
+        System.out.println("  1) Show account transaction history");
+        System.out.println("  2) Withdrawl");
+        System.out.println("  3) Deposit");
+        System.out.println("  4) Transfer");
+        System.out.println("  5) Quit");
+        System.out.println();
+        System.out.println("Enter choice: ");
+        choice = sc.nextInt();
+      
+        if (choice < 1 || choice > 5) {
+          System.out.println("Invalid choice. Please choose 1-5");
+        }
+    } while(choice < 1 || choice > 5);
+    
+    // process the choice
+    switch (choice) {
+        
+      case 1:
+        ATM.showTransHistory(theUser, sc);
+        break;
+      case 2:
+        ATM.withdrawlFunds(theUser, sc);
+        break;
+      case 3:
+        ATM.depositFunds(theUser, sc);
+        break;
+      case 4:
+        ATM.transferFunds(theUser, sc);
+        break;
+    }
+    
+    // redisplay this menu unless the user wants to quit
+    if (choice != 5) {
+      ATM.printUserMenu(theUser, sc);
+    }
+  }
+  
+  /**
+   * Show the transaction history for an account
+   * @param theUser    the logged-in User object
+   * @param sc         the Scanner object used for user input
+   */
+  public static void showTransHistory(User theUser, Scanner sc) {
+    
+    int theAcc;
+    
+    // get account whose transaction history to look at
+    do {
+        System.out.printf("Enter the number (1-%d) of the amount\n" +
+                          " whose transactions you want to see: ",
+                          theUser.numAccounts());
+        theAcct = sc.nextInt()-1;
+        if (theAcct < 0 || theAcct >= theUser.numAccounts()) {
+          System.out.println("Invalid account. Please try again.");
+        }  
+    } while (theAcct < 0 || theAcct >= theUser.numAccounts());
+      
+    // print the transaction history
+    theUser.printAcctTransHistory(theAcct);
+    
+  }
+
+  public static void transferFunds(User theUser, Scanner sc) {
+  
+    // inits
+    int fromAcct;
+    int toAcct;
+    double amount;
+    double acctBall;
+    
+    // get the amount to transferfrom
+    do {
+      System.out.printf("Enter the number (1-%d) of the account\n" +
+                       "to transfer from: ");
+      fromAcct = sc.nextInt()-1;
+      if (fromAcct < 0 || fromAcct >= theUser.numAccounts()) {
+          System.out.println("Invalid account. Please try again.");
+      }
+    } while (fromAcct < 0 || fromAcct >= theUser.numAccounts());
+    acctBal = theUser.getAcctBalance(fromAcct);
+  }
 }  
