@@ -108,6 +108,10 @@ public class ATM {
       case 4:
         ATM.transferFunds(theUser, sc);
         break;
+      case 5:
+        // gobble up rest of previous input
+        sc.nextLine();
+        break;
     }
     
     // redisplay this menu unless the user wants to quit
@@ -222,7 +226,7 @@ public class ATM {
     
     // get the amount to transfer
     do  {
-      System.out.printf("Enter the amount to transfer (max $%.02f): $",
+      System.out.printf("Enter the amount to withdraw (max $%.02f): $",
                        acctBal);
         amount = sc.nextDouble());
         if (amount < 0) {
