@@ -19,6 +19,7 @@ public class Main extends Application {
     window.setTitle("JMB");
     
     button = new Button("Click Me");
+    button.setOnAction(e -> AlertBox.display("Title of window", "Nox this alert box is awesome!");
     
     StackPane layout = new StackPane();
     layout.getChildren().add(button);
