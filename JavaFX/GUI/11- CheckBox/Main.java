@@ -19,7 +19,7 @@ public class Main extends Application {
   @Override
   public void start(Stage primaryStage) throws Exception {
     window = primaryStage;
-    window.setTitle("Checkbox Example");
+    window.setTitle("JM's Meat Subs");
     
     // Checkboxes
     CheckBox box1 = new CheckBox("Bacon");
@@ -28,6 +28,7 @@ public class Main extends Application {
     
     // Button
     button = new Button ("Order Now!");
+    button.setOnAction(e -> handleOptions(box1, box2));
     
     // Layout
     VBox layout = new VBox(10);
@@ -38,4 +39,19 @@ public class Main extends Application {
     window.setScene(scene);
     window.show();
   }
+  
+  // Handle checkbox options
+  private void handleOptions(CheckBox box1, CheckBox box2) {
+    String message = "Users order:\n";
+    
+    if(box1.isSelected())
+      messages += "bacon\n";
+    
+    if(box2.isSelected())
+      messages += "Tuna\n";
+    
+    System.out.println(message);
+  }
+  
+  
 }
