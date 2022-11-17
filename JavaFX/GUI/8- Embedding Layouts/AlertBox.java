@@ -1,3 +1,7 @@
+/*
+ * @author Jean Marc Boulos
+ * @since 14/11/2022
+ */
 import javafx.stage.*;
 import javafx.scene.*;
 import javafx.scene.layout.*;
