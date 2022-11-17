@@ -31,5 +31,7 @@ public class Main extends Application {
     vbow.getChildren().addAll();
     
     Scene scene = new Scene(vbox);
+    window.setScene(scene);
+    window.show();
   }
 }
