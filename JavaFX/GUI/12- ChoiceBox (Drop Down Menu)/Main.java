@@ -1,3 +1,7 @@
+/*
+ * @author Jean Marc Boulos
+ * @since 16/11/2022
+ */
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
