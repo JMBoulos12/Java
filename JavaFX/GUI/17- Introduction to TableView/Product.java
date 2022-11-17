@@ -1,3 +1,7 @@
+/*
+ * @author Jean Marc Boulos
+ * @since 17/11/2022
+ */
 public class Product {
   
   private String name;
