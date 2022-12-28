@@ -1,3 +1,5 @@
+package 26- CSS Inline Styles and Selectors;
+
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
