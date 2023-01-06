@@ -30,6 +30,7 @@ public class Main extends Application {
 
     // Name label - constrains use (child, column, row)
     Label nameLabel = new Label("Username: ");
+    nameLabel.setId("bold-label");
     GridPane.setConstraints(nameLabel, 0, 0);
 
     // Name input
@@ -48,6 +49,11 @@ public class Main extends Application {
     // Login
     Button loginButton = new Button("Log in");
     GridPane.setConstraints(loginButton, 1, 2);
+    
+    // Sign up
+    Button signUpButton = new Button("Sign Up");
+    signUpButton.getStyleClass().add("button-blue");
+    GridPane.setConstraints(signUpButton, 1, 3);
 
     // Add everything to grid
     grid.getChildren().addAll(nameLabel, nameInput, passLabel, passInput, loginButton);
