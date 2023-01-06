@@ -16,11 +16,18 @@ public class Main extends Application {
   @Override
   public void start(Stage primaryStage) throws Exception {
     window = primaryStage;
-    window.setTitle("JMB");
+    window.setTitle("BOULOS");
     
-    
+    Person bucky = new Person();
+
+    bucky.firstNameProperty().addListener( (v, oldValue, newValue) -> {
+      System.out.println("Name changed to " + newValue);
+      System.out.println("firstNameProperty(): " + bucky.firstNameProperty());
+      System.out.println("getFirstName(): " + bucky.getFirstName());
+    });
     
     button = new Button("Submit");
+    button.setOnAction(e -> bucky.setFirstName("Porky"));
     
     StackPane layout = new StackPane();
     layout.getChildren().add(button);
