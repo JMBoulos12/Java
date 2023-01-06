@@ -1,4 +1,4 @@
-package 27- CSS Inline Styles and Selectors;
+package 27- CSS Custom Style and Selectors;
 
 import javafx.application.Application;
 import javafx.geometry.Insets;
