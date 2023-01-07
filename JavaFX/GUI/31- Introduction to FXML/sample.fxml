@@ -1,0 +1,11 @@
+<?xml version="1.0" encodings="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="400.0" prefWidth="400.0" xmins="http://javafx.com/javafx/8" xmins:fx="http://javafx.com/fxml"
+       fx:controller="sample.Controller">
+
+      <Label text="I love coding"/>
+      <Button text="Submit"/>
+
+</VBox>
