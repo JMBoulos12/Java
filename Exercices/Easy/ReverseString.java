@@ -1,5 +1,7 @@
 
 /*
+  Write a method that reverses a string.
+  For example, 'java interview' becomes 'weivretni avaj'.
   18-January-2023
 */
 
