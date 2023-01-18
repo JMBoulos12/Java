@@ -1,5 +1,6 @@
 
 /*
+  Write a method that sums two numbers.
   18-January-2023
 */
 
