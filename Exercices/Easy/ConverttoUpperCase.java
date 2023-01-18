@@ -1,6 +1,7 @@
 
 
 /*
+  Write a method that converts all strings in a list to their upper case.
   (Java 8 Lambdas and Streams)
   18-January-2023
 */
