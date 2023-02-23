@@ -10,7 +10,7 @@
 */
 
 
-package com.thealgorithms.datastructures.graphs;
+package com.jmboulos.datastructures.graphs;
 
 class PrimMST {
 
