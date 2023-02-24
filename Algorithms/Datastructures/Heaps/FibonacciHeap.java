@@ -9,7 +9,7 @@
 */
 
 
-package com.thealgorithms.datastructures.heaps;
+package com.jmboulos.datastructures.heaps;
 
 public class FibonacciHeap {
 
