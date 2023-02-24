@@ -10,7 +10,7 @@
 
 
 
-package com.thealgorithms.datastructures.stacks;
+package com.jmboulos.datastructures.stacks;
 
 import java.util.*;
 
