@@ -13,7 +13,7 @@
   14-February-2023
 */
 
-package com.thealgorithms.datastructures.queues;
+package com.jmboulos.datastructures.queues;
 
 import java.util.ArrayList;
 
