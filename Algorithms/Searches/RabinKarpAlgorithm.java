@@ -10,7 +10,7 @@
 */
 
 
-package com.thealgorithms.searches;
+package com.jmboulos.searches;
 
 public class RabinKarpAlgorithm {
 
