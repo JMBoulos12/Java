@@ -20,7 +20,7 @@ package com.jmboulos.searches;
 
 import static java.lang.String.format;
 
-import com.thealgorithms.devutils.searches.SearchAlgorithm;
+import com.jmboulos.devutils.searches.SearchAlgorithm;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.stream.Stream;
