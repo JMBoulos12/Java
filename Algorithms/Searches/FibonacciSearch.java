@@ -14,13 +14,10 @@
 */
 
 
-package com.thealgorithms.searches;
+package com.jmboulos.searches;
 
-import com.thealgorithms.devutils.searches.SearchAlgorithm;
+import com.jmboulos.devutils.searches.SearchAlgorithm;
 
-/*
-
- */
 public class FibonacciSearch implements SearchAlgorithm {
 
     /**
