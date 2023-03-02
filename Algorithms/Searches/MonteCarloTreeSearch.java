@@ -13,7 +13,7 @@
 */
 
 
-package com.thealgorithms.searches;
+package com.jmboulos.searches;
 
 import java.util.ArrayList;
 import java.util.Collections;
