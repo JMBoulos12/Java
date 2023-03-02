@@ -18,7 +18,7 @@
 */
 
 
-package com.thealgorithms.searches;
+package com.jmboulos.searches;
 
 import java.util.Scanner;
 
