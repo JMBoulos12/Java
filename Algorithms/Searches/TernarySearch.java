@@ -16,7 +16,7 @@
   08-February-2023
 */
 
-package com.thealgorithms.searches;
+package com.jmboulos.searches;
 
 import static java.lang.String.format;
 
