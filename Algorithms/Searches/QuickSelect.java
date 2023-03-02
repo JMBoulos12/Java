@@ -3,13 +3,11 @@
 
 
 /*
-  Write 
-  
   08-February-2023
 */
 
 
-package com.thealgorithms.searches;
+package com.jmboulos.searches;
 
 import java.util.*;
 
