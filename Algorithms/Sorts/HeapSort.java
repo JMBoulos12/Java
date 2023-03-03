@@ -15,7 +15,7 @@
   06-February-2023
 */
 
-package com.thealgorithms.sorts;
+package com.jmboulos.sorts;
 
 public class HeapSort implements SortAlgorithm {
   
