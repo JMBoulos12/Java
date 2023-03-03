@@ -8,9 +8,9 @@
   06-February-2023
 */
 
-package com.thealgorithms.sorts;
+package com.jmboulos.sorts;
 
-import static com.thealgorithms.sorts.SortUtils.*;
+import static com.jmboulos.sorts.SortUtils.*;
 
 public class PancakeSort implements SortAlgorithm {
   
