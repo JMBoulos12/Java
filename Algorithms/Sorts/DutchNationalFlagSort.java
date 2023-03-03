@@ -17,7 +17,7 @@
 */
 
 
-package com.thealgorithms.sorts;
+package com.jmboulos.sorts;
 
 public class DutchNationalFlagSort implements SortAlgorithm {
   
