@@ -8,7 +8,7 @@
   06-February-2023
 */
 
-package com.thealgorithms.sorts;
+package com.jmboulos.sorts;
 
 import java.util.function.Function;
 import static com.thealgorithms.sorts.SortUtils.*;
