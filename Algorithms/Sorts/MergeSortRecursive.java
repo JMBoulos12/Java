@@ -9,7 +9,7 @@
 */
 
 
-package com.thealgorithms.sorts;
+package com.jmboulos.sorts;
 
 import java.util.ArrayList;
 import java.util.Arrays;
