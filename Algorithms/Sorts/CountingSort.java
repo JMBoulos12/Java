@@ -15,9 +15,9 @@
 */
 
 
-package com.thealgorithms.sorts;
+package com.jmboulos.sorts;
 
-import static com.thealgorithms.sorts.SortUtils.print;
+import static com.jmboulos.sorts.SortUtils.print;
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.Collectors.toMap;
 import java.util.*;
