@@ -8,7 +8,7 @@
   07-February-2023
 */
 
-package com.thealgorithms.strings;
+package com.jmboulos.strings;
 
 class Alphabetical {
 
