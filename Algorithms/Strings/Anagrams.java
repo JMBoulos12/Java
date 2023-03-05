@@ -10,7 +10,7 @@
 */
 
 
-package com.thealgorithms.strings;
+package com.jmboulos.strings;
 
 import java.util.Arrays;
 import java.util.HashMap;
