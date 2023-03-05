@@ -7,7 +7,7 @@
 */
 
 
-package com.thealgorithms.strings;
+package com.jmboulos.strings;
 
 public class Lower {
 
