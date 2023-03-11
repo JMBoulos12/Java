@@ -35,4 +35,5 @@ class Main {
 In the above example, we have int type variables num1 and num2. Notice the line,
 
 char a = (char)num1;
+
 */
