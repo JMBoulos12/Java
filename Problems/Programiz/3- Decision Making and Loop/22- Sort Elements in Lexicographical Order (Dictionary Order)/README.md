@@ -15,3 +15,13 @@ Here's how elements are compared and swapped in each iteration.
 | { "C", "Ruby", "Python", "Java" } |	1	| 2	| Ruby and Python | { "C", "Python", "Ruby", "Java" } |
 | { "C", "Python", "Ruby", "Java" } |	1	| 3	| Python and Java	| { "C", "Java", "Ruby", "Python" } |
 | { "C", "Java", "Ruby", "Python" } |	2	| 3	| Ruby and Python	| { "C", "Java", "Python", "Ruby" } |
+
+
+### Properties
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| tableLayout | `auto` \| `fixed` | `auto` \| `fixed` for any columns is fixed or ellipsis or header is fixed | https://developer.mozilla.org/en-US/docs/Web/CSS/table-layout |
+| prefixCls | String | rc-table |  |
+| className | String |  | additional className |
+| id | String |  | identifier of the container div |
