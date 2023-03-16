@@ -8,6 +8,8 @@ Since we are sorting elements in lexicographical (dictionary) order, we are swap
 
 Here's how elements are compared and swapped in each iteration.
 
+### Properties
+
 | Initial words | i	| j	| Comparison |words[]|
 | { "Ruby", "C", "Python", "Java" } | 0	| 1	| Ruby and C | { "C", "Ruby", "Python", "Java" } |
 | { "C", "Ruby", "Python", "Java" } |	0	| 2	| C and Python | { "C", "Ruby", "Python", "Java" } |
