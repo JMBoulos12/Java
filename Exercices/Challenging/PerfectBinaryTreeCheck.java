@@ -6,10 +6,12 @@
 /*
   A binary tree is perfect when all levels are complete.
   Write a method that checks if a binary tree is perfect.
-  TreeNode API methods: node.left() and node.right(). 
+  
+  TreeNode API methods: node.left() and node.right() ..
   
   21-January-2023
 */
+
 
 public Boolean isPerfectTree(TreeNode node) {
   int treeDepth = depth(node);
@@ -30,3 +32,4 @@ private Boolean isPerfectTree(TreeNode node, int depth, int treeDepth) {
   }
   return false;
 }
+
