@@ -1,4 +1,4 @@
 
 
 
-# $${\color{grey}LEARNING EXERCISE}$$
+# $${\color{grey}LEARNING Exercise}$$
