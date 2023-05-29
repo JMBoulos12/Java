@@ -22,3 +22,8 @@ public Integer largestPrimeFactor(Integer n) {
   }
   return n == 1 ? factor : n;
 }
+
+
+
+
+
