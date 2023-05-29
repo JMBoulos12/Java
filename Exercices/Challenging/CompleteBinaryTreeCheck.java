@@ -27,3 +27,9 @@ private Integer countNodes(TreeNode node) {
     return 0;
   }
   else return 1 + countNodes(node.left()) + countNodes(node.right());
+
+  
+  
+  
+  
+  
